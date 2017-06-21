@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>屏幕事件</title>
+</head>
+<body>
+<input type="button" value="clickme">
+<div id="test1"></div>
+<script>
+    var demo = document.querySelector("#test1");
+    console.log(demo);
+    demo.style.width="600px";
+    demo.style.height="400px";
+    demo.style.backgroundColor="#0f0";
+    function R(e){
+        if(e.button==0){
+            demo.style.backgroundColor = "black";
+
+        }
+    }
+    demo.onmousedown=R;
+
+
+
+</script>
+</body>
+</html>
